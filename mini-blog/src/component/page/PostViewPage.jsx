@@ -51,7 +51,7 @@ function PostViewPage(props) {
   const navigate = useNavigate();
   const { postId } = useParams();
 
-  const post = data.find((item) => item.id == post.id);
+  const post = data.find((item) => item.id == postId);
 
   const [comment, setComment] = useState("");
 
