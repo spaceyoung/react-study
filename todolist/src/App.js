@@ -3,6 +3,7 @@ import './App.css';
 import { createGlobalStyle } from 'styled-components';
 
 import TodoTemplate from './components/TodoTemplate';
+import TodoHead from './components/TodoHead';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,7 +15,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <TodoTemplate>안녕하세요!</TodoTemplate>
+      <TodoTemplate>
+        <TodoHead />
+      </TodoTemplate>
     </>
   );
 }
